@@ -4,7 +4,7 @@ class Login extends Component {
         return(
             <div>
                 <div>
-                    <span>1111</span>
+                    <span>登录页面</span>
                 </div>
             </div>
         )

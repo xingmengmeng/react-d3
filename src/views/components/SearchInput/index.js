@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 class SearchInput extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
-            value:props.value || ''
+        this.state = {
+            value: props.value || ''
         }
     }
-    render(){
+    render() {
         return (
-            <input type="text" value={this.state.value} onChange={this.change.bind(this)} onKeyUp={this.search.bind(this)}/>
+            <input type="text" value={this.state.value} onChange={this.change.bind(this)} onKeyUp={this.search.bind(this)} />
         )
     }
-    change(e){
+    change(e) {
         this.setState({
-            value:e.target.value
+            value: e.target.value
         })
     }
-    search(e){
-        if(e.keyCode === 13){
+    search(e) {
+        if (e.keyCode === 13) {
             this.props.fn(this.state.value);
         }
     }
