@@ -45,7 +45,19 @@ function post(url, data) {
         })
     })
 }
+function deletes(url, params) {
+    return new Promise((resolve,reject) => {
+        axios.delete(url, {
+            params: params
+        }).then(res => {
+            resolve(res)
+        }).catch(err => {
+            reject(err)
+        })
+    })
+}
 export {
     get,
     post,
+    deletes
 }

@@ -1,0 +1,143 @@
+  body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  ::-webkit-input-placeholder{color:#b2c3ec;}
+  input,select{
+    font-size: 13px;
+  }
+  .loginBody{
+    //background: url("../images/bg.jpg") center;
+    background-size: cover;
+  }
+  
+  .loginUl{
+    position: absolute;
+    z-index: 9;
+    margin:-200px 0 0 -180px;
+    padding:38px 36px 0 36px;
+    top:50%;
+    left:50%;
+    width: 360px;
+    height: 400px;
+    //background: url("../images/bg2.png");
+    box-sizing: border-box;
+  
+    li{
+      width: 100%;
+      h2{
+        padding-bottom: 10px;
+        margin-left: 40px;
+        font-size: 0;
+        width: 204px;
+        height: 22px;
+        //background: url("../images/loginLogo.png") no-repeat;
+      }
+      .txt{
+        margin-top: 30px;
+        padding: 0 10px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #6b9cea;
+        box-sizing: border-box;
+        background: rgba(45,93,214,.38);
+        font-size: 14px;
+        color: #333;
+      }
+      &.remLi{
+        position: relative;
+        margin-top: 10px;
+        height: 14px;
+        line-height: 14px;
+        color: #ddd;
+        #rememberPass{
+          position: absolute;
+          left:0;
+          top:0;
+          width: 100%;
+          opacity: 0;
+        }
+        .selectIcon{
+          float: left;
+          width: 14px;
+          height: 14px;
+          background: url("../../assets/images/ls_7.png");
+        }
+        .noSelectIcon{
+            float: left;
+          width: 14px;
+          height: 14px;
+          background: url("../../assets/images/ls_8.png");
+        }
+        label{
+          margin-left: 10px;
+        }
+      }
+      &.redF{
+        padding-top: 6px;
+        height: 14px;
+        color:#f95b1c;
+        font-size: 12px;
+      }
+      #loginBtn{
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        background: #43a9ff;
+        border: 0;
+        border-radius: 2px;
+        font-size: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .footer{
+    position: absolute;
+    bottom:20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: none;
+  }
+  
+  .flowImg{
+    position: absolute;
+    z-index: 1;
+    &.img1{
+      top:40%;
+      right: 30%;
+    }
+    &.img2{
+      top:75%;
+      right: 8%;
+      -webkit-animation:pulse 4s 2s infinite;
+      -moz-animation:pulse 4s 2s infinite;
+      animation:pulse 4s 2s infinite;
+    }
+    &.img3{
+      top:14%;
+      left: 53%;
+      -webkit-animation:pulse 3s 2s infinite;
+      -moz-animation:pulse 3s 2s infinite;
+      animation:pulse 3s 2s infinite;
+    }
+    &.img6{
+      left:30%;
+      opacity: 0;
+      -webkit-animation: inAndOut 2s 1.5s infinite;
+      -moz-animation: inAndOut 2s 1.5s infinite;
+      animation: inAndOut 2s 1.5s infinite;
+    }
+    &.img7{
+      left:30%;
+      opacity: 0;
+      -webkit-animation: inAndOutSmall 3s .5s infinite;
+      -moz-animation: inAndOutSmall 3s .5s infinite;
+      animation: inAndOutSmall 3s .5s infinite;
+    }
+  }
