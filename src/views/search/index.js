@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './index.less'
 import { getSearchList } from '../../api/api.js';
-import SearchInput from '../components/SearchInput';
-import SearchList from '../components/SearchList';
+import SearchInput from '../../components/SearchInput';
+import SearchList from '../../components/SearchList';
 import Page from '../../components/Page';
 class Search extends Component {
     constructor() {

@@ -1,22 +1,23 @@
 import axios from 'axios';
 import qs from 'qs';
-
+import store from '../store';
+import * as actions from '../store/actions'; 
 // 拦截请求
 axios.interceptors.request.use(function (config) {
-    //Toast.loading('加载中', 0);
+    store.dispatch(actions.showLoading());
     return config
 });
 
 // 拦截相应
 axios.interceptors.response.use(function (config) {
-    //Toast.hide();
+    store.dispatch(actions.hideLoading());
     if (config.data.code === 203) {
         window.location.href = '/login';
         return false;
     }
     return config
 }, err => {
-    let status = err.response.status;
+    let status = err||err.response.status;
     console.log(status)
 });
 
