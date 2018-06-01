@@ -1,7 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 import store from '../store';
-import * as actions from '../store/actions'; 
+import * as actions from '../store/actions';
 // 拦截请求
 axios.interceptors.request.use(function (config) {
     store.dispatch(actions.showLoading());
@@ -17,7 +17,7 @@ axios.interceptors.response.use(function (config) {
     }
     return config
 }, err => {
-    let status = err||err.response.status;
+    let status = err || err.response.status;
     console.log(status)
 });
 
@@ -47,7 +47,7 @@ function post(url, data) {
     })
 }
 function deletes(url, params) {
-    return new Promise((resolve,reject) => {
+    return new Promise((resolve, reject) => {
         axios.delete(url, {
             params: params
         }).then(res => {

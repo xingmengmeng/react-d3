@@ -41,7 +41,9 @@ class Login extends Component {
                 document.getElementById('password').value = this.cookiePsd = psd;
                 if (nm !== "" && psd !== "") {
                     document.getElementById('rememberPass').checked = true;
-                    this.isSaveCheck = true;
+                    this.setState({
+                        isSaveCheck: true
+                    });
                 }
             }
         }

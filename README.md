@@ -1,5 +1,5 @@
 #### 技术选型
-react + react-router 4 + axios + less + D3(V4) + redux
+react + react-router 4 + axios + less + D3(V4) + redux + react-redux
 ```
 启动
 npm start

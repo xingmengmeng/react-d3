@@ -7,11 +7,11 @@ function reducer(state, action) {
         case 'SHOW':
             // state = Object.assign({}, state, state.showLoading = true)
             // return state;
-            return {...state,showLoading:true}
+            return { ...state, showLoading: true }
         case 'HIDE':
             // state = Object.assign({}, state, state.showLoading = false)
             // return state;
-            return {...state,showLoading:false}
+            return { ...state, showLoading: false }
         default:
             return state;
     }
