@@ -34,7 +34,7 @@ class App extends Component {
 }
 
 export default connect(
-  state=>{
+  state=>{   //state为形参  相当于store中的store.state  前面的key showLoading为当前页面中使用的参数名  如上this.props.showLoading
     return{
       showLoading:state.showLoading
     }

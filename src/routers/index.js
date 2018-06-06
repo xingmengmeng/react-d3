@@ -16,6 +16,7 @@ export default class RouterMap extends Component {
                     </Switch>
                 </div>
             </BrowserRouter>
+            // 一个文件路由  只能在主路由中有一个browserRouter  路由的根级
         )
     }
 }
