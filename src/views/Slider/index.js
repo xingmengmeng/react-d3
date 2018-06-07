@@ -23,10 +23,10 @@ export default class SliderPage extends Component {
     render() {
         return (
             <section>
+                {/*speed 速度  delay 每张图片停留的时间 autoplay自动轮播  dots是否有点击的点点  arrows是否有左右箭头*/}
                 <Slider items={IMAGE_DATA}
-                    speed={1.2}
-                    delay={2.1}
-                    pause={true}
+                    speed={.3}
+                    delay={2}
                     autoplay={true}
                     dots={true}
                     arrows={true}

@@ -47,15 +47,17 @@
     background: blue;
 }
 .box a{
+    font-size:0;
     width: 30px;
     height: 45px;
-   // background-image: url("img/pre.png");
+    background-image: url("./images/pre.png");
     background-repeat: no-repeat;
     position: absolute;
     top:127.5px;
     opacity: 0.5;
     filter:'alpha(opacity:50)';
-    display: none;
+    z-index: 2;
+    cursor: pointer;
 }
 .box a:hover{
     opacity: 1;
